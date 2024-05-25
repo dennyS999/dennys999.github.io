@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+
+        <!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="" class="cs-logo" id="logo" aria-label="back to home">
+            <img src="images/logolarge.png" alt="logo" width="500" height="500" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="" class="cs-button-solid cs-nav-button cs-active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-button-solid cs-nav-button">
+                            About
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-button-solid cs-nav-button">
+                            Services
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-button-solid cs-nav-button">
+                            Barber
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-button-solid cs-nav-button">
+                            Gallery
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a href="" class="cs-button-solid cs-nav-button">Book Now</a>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+    </div>
+</header>
+                                
+    </head>
+
+    <body>
+        <!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-229">
+    <div class="cs-container">
+        <div class="cs-flex-group">
+            <h1 class="cs-title">The Neighborhood Barber</h1>
+            <p class="cs-text">
+                A team of highly skilled barber providing affordable quality haircut.
+            </p>
+            <a href="" class="cs-button-solid">Book Now</a>
+            
+        </div>
+    </div>
+
+    <!-- Background Image -->
+    <picture class="cs-picture">
+        <source media="(max-width: 600px)" srcset="images/hero.jpg">
+        <source media="(min-width: 601px)" srcset="images/hero.jpg">
+        <img loading="lazy" decoding="async" src="images/hero.jpg" alt="hero image" width="2250" height="1500" aria-hidden="true">
+    </picture>
+</section>
+                
+
+<!-- ============================================ -->
+<!--                 Why Choose Us                -->
+<!-- ============================================ -->
+
+<section id="why-choose-1821">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">About us</span>
+            <h2 class="cs-title">Best Barber Shop in Town!</h2>
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="images/about.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="images/about.jpg">
+                <img loading="lazy" decoding="async" src="images/about.jpg" alt="body builder" width="562" height="568">
+            </picture>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-house.svg" alt="icon" width="32" height="32">
+                <div class="cs-item-wrapper">
+                    <h3 class="cs-h3">
+                        Cheap and Afforable Cut
+                    </h3>
+                    <p class="cs-item-text">
+                        We give the cheapest haircut around, while preserving quality. It's a win-wi for everybody.
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-layer.svg" alt="icon" width="32" height="32">
+                <div class="cs-item-wrapper">
+                    <h3 class="cs-h3">
+                        Big and Spacious Shop
+                    </h3>
+                    <p class="cs-item-text">
+                        Waiting on another customer to be finished? Well, we have extra chair with comfortable seat that can lean back. 
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-hourglass.svg" alt="icon" width="32" height="32">
+                <div class="cs-item-wrapper">
+                    <h3 class="cs-h3">
+                        Clean and Latest Model
+                    </h3>
+                    <p class="cs-item-text">
+                        We use the latest model of equipment and keep them squeakey clean after each cut.
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-flower.svg" alt="icon" width="32" height="32">
+                <div class="cs-item-wrapper">
+                    <h3 class="cs-h3">
+                        Deals
+                    </h3>
+                    <p class="cs-item-text">
+                        We give out special discount on repeating customer, student, children, and senior. 
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+         
+
+<!-- ============================================ -->
+<!--                    Menu                      -->
+<!-- ============================================ -->
+
+<section id="menu-1001">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Services</h2>
+            <p class="cs-text">
+                We provide every type of haircut that is available. You are able to choose from our killer fade or go down a more professional look. Whatever, you think of we can do it.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture"  aria-hidden="true">
+                    <source media="(max-width: 600px)" srcset="images/fade.jpg">
+                    <source media="(min-width: 601px)" srcset="images/fade.jpg">
+                    <img loading="lazy" decoding="async" src="images/fade.jpg" alt="food" width="160" height="160">
+                    </picture>
+                    <div class="cs-info">
+                    <h3 class="cs-h3">
+                        <span class="cs-name">Fade</span>
+                        <span class="cs-price">
+                            $30
+                        </span>
+                    </h3>
+                    <p class="cs-item-p">
+                        One of our most requested haircut of all time combined with one of our barber that specialized in this cut.
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture"  aria-hidden="true">
+                    <source media="(max-width: 600px)" srcset="images/trim.jpg">
+                    <source media="(min-width: 601px)" srcset="images/trim.jpg">
+                    <img loading="lazy" decoding="async" src="images/trim.jpg" alt="food" width="160" height="160">
+                    </picture>
+                    <div class="cs-info">
+                    <h3 class="cs-h3">
+                        <span class="cs-name">Trim</span>
+                        <span class="cs-price">
+                            $25
+                        </span>
+                    </h3>
+                    <p class="cs-item-p">
+                        A simple cut that shorten the hair while keeping the style.
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture"  aria-hidden="true">
+                    <source media="(max-width: 600px)" srcset="images/buzzcut.jpg">
+                    <source media="(min-width: 601px)" srcset="images/buzzcut.jpg">
+                    <img loading="lazy" decoding="async" src="images/buzzcut.jpg" alt="food" width="160" height="160">
+                    </picture>
+                    <div class="cs-info">
+                    <h3 class="cs-h3">
+                        <span class="cs-name">Buzzcut</span>
+                        <span class="cs-price">
+                            $30
+                        </span>
+                    </h3>
+                    <p class="cs-item-p">
+                        An extra short hairstyle. Perfect for those that don't like longer hairstyle.
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture"  aria-hidden="true">
+                    <source media="(max-width: 600px)" srcset="images/scissorcut.jpg">
+                    <source media="(min-width: 601px)" srcset="images/scissorcut.jpg">
+                    <img loading="lazy" decoding="async" src="images/scissorcut.jpg" alt="food" width="160" height="160">
+                    </picture>
+                    <div class="cs-info">
+                    <h3 class="cs-h3">
+                        <span class="cs-name">Scissorcut</span>
+                        <span class="cs-price">
+                            $35
+                        </span>
+                    </h3>
+                    <p class="cs-item-p">
+                        A perfect way to cut your hair for a specific hairstyle. 
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture"  aria-hidden="true">
+                    <source media="(max-width: 600px)" srcset="images/clean shave.jpg">
+                    <source media="(min-width: 601px)" srcset="images/clean shave.jpg">
+                    <img loading="lazy" decoding="async" src="images/clean shave.jpg" alt="food" width="160" height="160">
+                    </picture>
+                    <div class="cs-info">
+                    <h3 class="cs-h3">
+                        <span class="cs-name">Clean shave</span>
+                        <span class="cs-price">
+                            $35
+                        </span>
+                    </h3>
+                    <p class="cs-item-p">
+                        A clean shave for the beard. We prioritise maximum comfort.
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture"  aria-hidden="true">
+                    <source media="(max-width: 600px)" srcset="images/headshave.jpg">
+                    <source media="(min-width: 601px)" srcset="images/headshave.jpg">
+                    <img loading="lazy" decoding="async" src="images/headshave.jpg" alt="food" width="160" height="160">
+                    </picture>
+                    <div class="cs-info">
+                    <h3 class="cs-h3">
+                        <span class="cs-name">Headshave</span>
+                        <span class="cs-price">
+                            $35
+                        </span>
+                    </h3>
+                    <p class="cs-item-p">
+                        Don't want any hair? Well, This is perfect for you.
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <a href="" class="cs-button-solid">Book Now</a>
+    </div>
+    <!--Static background is in CSS as a tiled pattern-->
+</section>
+     
+
+<!-- ============================================ -->
+<!--                Meet The Team                 -->
+<!-- ============================================ -->
+
+<section id="meet-team-1765">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex-wrapper">
+                <div class="cs-flex">
+                    <span class="cs-topper">Our Barber</span>
+                    <h2 class="cs-title">Meet Some of The Most Talented Barber in The Country
+                </div>
+                <a href="" class="cs-button-solid">View Our Team Members</a>
+            </div>
+            <div class="cs-wrapper">
+                <p class="cs-text">
+                    We aim to give the community the best haircut possible while being affordable. Our team of higly experienced barber have been cutting hair for a decade now. We guarantee that you will be satisfy with our work.
+                </p>
+                
+            </div>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="images/barber1.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="images/barber1.jpg">
+                        <img loading="lazy" decoding="async" src="images/barber1.jpg" alt="person" width="305" height="440">
+                    </picture>
+                    <div class="cs-social">
+                        <a href="" class="cs-link" aria-label="Facebook" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-grey.svg" alt="facebook" width="20" height="20">
+                        </a>
+                        <a href="" class="cs-link" aria-label="Twitter" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/x-grey.svg" alt="twitter" width="20" height="20">
+                        </a>
+                        <a href="" class="cs-link" aria-label="Instagram" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram-grey.svg" alt="instagram" width="20" height="20">
+                        </a>
+                    </div>
+                </div>
+                <div class="cs-info">
+                    <span class="cs-name">Michael </span>
+                    <span class="cs-job">Fade Specialist</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="images/barber2.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="images/barber2.jpg">
+                        <img loading="lazy" decoding="async" src="images/barber2.jpg" alt="person" width="305" height="440">
+                    </picture>
+                    <div class="cs-social">
+                        <a href="" class="cs-link" aria-label="Facebook" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-grey.svg" alt="facebook" width="20" height="20">
+                        </a>
+                        <a href="" class="cs-link" aria-label="Twitter" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/x-grey.svg" alt="twitter" width="20" height="20">
+                        </a>
+                        <a href="" class="cs-link" aria-label="Instagram" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram-grey.svg" alt="instagram" width="20" height="20">
+                        </a>
+                    </div>
+                </div>
+                <div class="cs-info">
+                    <span class="cs-name">Jame</span>
+                    <span class="cs-job">Buzzcut Specialist</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="images/barber3.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="images/barber3.jpg">
+                        <img loading="lazy" decoding="async" src="images/barber3.jpg" alt="person" width="305" height="440">
+                    </picture>
+                    <div class="cs-social">
+                        <a href="" class="cs-link" aria-label="Facebook" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-grey.svg" alt="facebook" width="20" height="20">
+                        </a>
+                        <a href="" class="cs-link" aria-label="Twitter" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/x-grey.svg" alt="twitter" width="20" height="20">
+                        </a>
+                        <a href="" class="cs-link" aria-label="Instagram" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram-grey.svg" alt="instagram" width="20" height="20">
+                        </a>
+                    </div>
+                </div>
+                <div class="cs-info">
+                    <span class="cs-name">George</span>
+                    <span class="cs-job">Shave Specialist</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="images/barber4.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="images/barber4.jpg">
+                        <img loading="lazy" decoding="async" src="images/barber4.jpg" alt="person" width="305" height="440">
+                    </picture>
+                    <div class="cs-social">
+                        <a href="" class="cs-link" aria-label="Facebook" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-grey.svg" alt="facebook" width="20" height="20">
+                        </a>
+                        <a href="" class="cs-link" aria-label="Twitter" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/x-grey.svg" alt="twitter" width="20" height="20">
+                        </a>
+                        <a href="" class="cs-link" aria-label="Instagram" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram-grey.svg" alt="instagram" width="20" height="20">
+                        </a>
+                    </div>
+                </div>
+                <div class="cs-info">
+                    <span class="cs-name">Paul</span>
+                    <span class="cs-job">General Cut</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="images/barber5.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="images/barber5.jpg">
+                        <img loading="lazy" decoding="async" src="images/barber5.jpg" alt="person" width="305" height="440">
+                    </picture>
+                    <div class="cs-social">
+                        <a href="" class="cs-link" aria-label="Facebook" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-grey.svg" alt="facebook" width="20" height="20">
+                        </a>
+                        <a href="" class="cs-link" aria-label="Twitter" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/x-grey.svg" alt="twitter" width="20" height="20">
+                        </a>
+                        <a href="" class="cs-link" aria-label="Instagram" target="_blank" rel="noopener">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram-grey.svg" alt="instagram" width="20" height="20">
+                        </a>
+                    </div>
+                </div>
+                <div class="cs-info">
+                    <span class="cs-name">David</span>
+                    <span class="cs-job">General Cut and Stylist</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery-1446">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Gallery</span>
+                <h2 class="cs-title">Our Photo Gallery</h2>
+            </div>
+        </div>
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      
+      <img src="images/gallery1.jpg" style="width:100%">
+      
+    </div>
+  
+    <div class="mySlides fade">
+      
+      <img src="images/gallery2.jpg" style="width:100%">
+      
+    </div>
+  
+    <div class="mySlides fade">
+      
+      <img src="images/gallery3.jpg" style="width:100%">
+      
+    </div>
+
+    <div class="mySlides fade">
+        
+        <img src="images/gallery4.jpg" style="width:100%">
+        
+      </div>
+
+      <div class="mySlides fade">
+        
+        <img src="images/gallery5.jpg" style="width:100%">
+        
+      </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+        
+    <div class="slideimage">
+        <h2 class="cs-tranform">Tranformation</h2>
+    </div>
+    </div>
+    <div class="img-comp-container">
+        <div class="img-comp-img">
+          <img src="images/clean.jpg" width="600" height="700">
+        </div>
+        <div class="img-comp-img img-comp-overlay">
+          <img src="images/messy.jpg" width="600" height="700">
+        </div>
+      </div>
+</section>
+
+
+  
+
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-274">
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="">
+                <!-- Remove the light class if you don't need the dark logo -->
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="images/logolarge.png" alt="logo" width="240" height="32">
+            </a>
+            
+        </div>
+        <!-- Links -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Contact</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="tel:123-456 7890">0423-900-370</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="mailto:info@codestitch.com">neighbourhoodbarber.com</a>
+            </li>
+        </ul>
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Address</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">3 Centreway Mt Waverley</a>
+            </li>
+        </ul>
+        <!-- Contact Info -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Opening Hours</span>
+            </li>
+            <li class="cs-nav-li">
+                Tuesday-Thursday - 9am-6pm
+            </li>
+            <li class="cs-nav-li">
+                Friday - 9am-6pm
+            </li>
+            <li class="cs-nav-li">
+                Saturday-Monday - Closed
+            </li>
+        </ul>
+    </div>
+</footer>
+                                
+                                
+
+        <script src="js/script.js"></script>
+        <script>initComparisons();</script>
+    </body>
+</html>
